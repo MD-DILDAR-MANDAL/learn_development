@@ -10,7 +10,7 @@ class Location {
 
   static List<Location> fetchAll() {
     return [
-      Location(1, 'Arashiyama Bamboo Grove', 'assets/images/kiyomizu-dara.jpg', [
+      Location(1, 'Arashiyama Bamboo Grove', 'assets/images/arashiyama.jpg', [
         LocationFact(
           'Summary',
           'While we could go on about the ethereal glow and seemingly endless heights of this bamboo grove on the outskirts of Kyoto, the sight\'s pleasures extend beyond the visual realm.',
@@ -30,14 +30,13 @@ class Location {
           'There are three cities that surround Mount Fuji: Gotemba, Fujiyoshida and Fujinomiya.',
         ),
       ]),
-      Location(3, 'Arashiyama Bamboo Grove', 'assets/images/arashiyama.jpg', [
+      Location(3, 'Kiyomizu-dera', 'assets/images/kiyomizu-dara.jpg', [
         LocationFact(
           'Summary',
-          'While we could go on about the ethereal glow and seemingly endless heights of this bamboo grove on the outskirts of Kyoto, the sight\'s pleasures extend beyond the visual realm.',
+          'Kiyomizu-dera, officially Otowa-san Kiyomizu-dera, is an independent Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site.',
         ),
         LocationFact(
-          'How to Get There',
-          'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.',
+          'Architectural Style', 'Japanese Buddhist architecture.',
         ),
       ]),
     ];

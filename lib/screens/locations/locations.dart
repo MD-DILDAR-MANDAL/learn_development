@@ -15,7 +15,7 @@ class Locations extends StatelessWidget {
                 .map(
                   (location) => GestureDetector(
                     onTap: () => _onLocationTap(context, location.id),
-                    child: Container(child: Text(location.name)),
+                    child: Text(location.name),
                   )
                 )
                 .toList(),
