@@ -1,21 +1,45 @@
 import 'package:flutter/material.dart';
+import 'screens/locations/locations.dart';
 import 'screens/location_detail/location_detail.dart';
 import 'styles.dart';
 
-class App extends StatelessWidget{
-  const App({super.key});
+const LocationsRoute = '/';
+const LocationDetailRoute = '/location_detail';
 
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LocationDetail(),
-      theme: ThemeData(
-        appBarTheme:  AppBarTheme(
-          titleTextStyle: AppBarTextStyle,
-        ),
-        textTheme: TextTheme(
-          titleLarge: TitleTextStyle,
-          bodyMedium: Body1TextStyle,
-        )   ));
-    }
+    return MaterialApp(onGenerateRoute: _routes(), theme: _theme);
+  }
+
+  RouteFactory _routes() {
+    return (settings) {
+      final Map<String, dynamic> arguments = settings.arguments;
+      Widget screen;
+      switch (settings.name) {
+        case LocationsRoute:
+          screen = Locations();
+          break;
+        case LocationDetailRoute:
+          screen = LocationDetail(arguments['id']);
+          break;
+        default:
+          return null;
+      }
+      return MaterialPageRoute(builder: (BuildContext context) => screen);
+    };
+  }
+
+  ThemeData _theme() {
+    return ThemeData(
+      appBarTheme: AppBarTheme(
+        titleTextStyle: AppBarTextStyle,
+        backgroundColor: Colors.blue,
+      ),
+      textTheme: TextTheme(
+        titleLarge: TitleTextStyle,
+        bodyMedium: Body1TextStyle,
+      ),
+    );
+  }
 }
