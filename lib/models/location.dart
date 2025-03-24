@@ -43,7 +43,7 @@ class Location {
     ];
   }
 
-  static Location fetchByID(int locationID) {
+  static Location? fetchByID(int locationID) {
     List<Location> locations = Location.fetchAll();
     for (var i = 0; i < locations.length; i++) {
       if (locations[i].id == locationID) {
