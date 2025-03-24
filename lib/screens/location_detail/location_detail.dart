@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'image_banner.dart';
 import 'text_section.dart';
 
 class LocationDetail extends StatelessWidget{
@@ -8,16 +9,17 @@ class LocationDetail extends StatelessWidget{
   Widget build(BuildContext context){
      return Scaffold(
         appBar: AppBar(
-          title: Text('Hello'),
-    
+          title: Text('Location Detail'),
+          backgroundColor: Colors.blue,
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children:[
-            TextSection(Colors.red),
-            TextSection(Colors.green),
-            TextSection(Colors.blue),
+            ImageBanner("assets/images/kiyomizu-dara.jpg"),
+            TextSection("title1","body1 fajkfh hfakj  fajhk fe  fhakl weuywui nmxczbxnmxv  sdjkhf afhkj vh ksd sdhka h"),
+            TextSection("title2","body2 fajkfh hfakj  fajhk fe  fhakl weuywui nmxczbxnmxv  sdjkhf afhkj vh ksd "),
+            TextSection("title3","body3 fajkfh hfakj  fajhk fe  fhakl weuywui nmxczbxnmxv  sdjkhf afhkj vh ksd fajkfh hfakj  fajhk fe  fhakl weuywui nmxczbxnmxv  sdjkhf afhkj vh ksd "),
           ],
         )
      );
