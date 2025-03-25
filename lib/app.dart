@@ -9,10 +9,7 @@ const LocationDetailRoute = '/location_detail';
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      onGenerateRoute: _routes(), 
-      theme: _theme()
-    );
+    return MaterialApp(onGenerateRoute: _routes(), theme: _theme());
   }
 
   RouteFactory _routes() {
@@ -41,6 +38,8 @@ class App extends StatelessWidget {
       ),
       textTheme: TextTheme(
         titleLarge: TitleTextStyle,
+        subtitle: SubTitleTextStyle,
+        caption: CaptionTextStyle,
         bodyMedium: Body1TextStyle,
       ),
     );
