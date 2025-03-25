@@ -1,5 +1,6 @@
 import 'location_fact.dart';
 
+
 class Location {
   final int id;
   final String name;
