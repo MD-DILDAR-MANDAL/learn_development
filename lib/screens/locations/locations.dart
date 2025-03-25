@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'tile_overlay.dart';
-import 'package:learn_development/screens/location_detail/image_banner.dart';
 import '../../app.dart';
 import '../../models/location.dart';
-
+import '../../widgets/image_banner.dart';
 
 class Locations extends StatelessWidget {
   @override

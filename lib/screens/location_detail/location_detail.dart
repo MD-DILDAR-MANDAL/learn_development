@@ -22,7 +22,7 @@ class LocationDetail extends StatelessWidget {
           children: [
             ImageBanner(assetPath: location.imagePath),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 20, 0, horizontal: 4.0),
+              padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 4.0),
               child: LocationTile(location: location),
             ),
           ]..addAll(textSections(location)),

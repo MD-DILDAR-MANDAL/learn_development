@@ -1,5 +1,4 @@
 import 'location_fact.dart';
-import 'package:meta/meta.dart';
 
 class Location {
   final int id;
@@ -10,12 +9,12 @@ class Location {
   final List<LocationFact> facts;
 
   Location({
-    this.id,
-    this.name,
-    this.imagePath,
-    this.userItinerarySummary,
-    this.tourPackageName,
-    this.facts,
+    required this.id,
+    required this.name,
+    required this.imagePath,
+    required this.userItinerarySummary,
+    required this.tourPackageName,
+    required this.facts,
   });
 
   static List<Location> fetchAll() {

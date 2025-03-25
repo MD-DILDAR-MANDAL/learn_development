@@ -38,8 +38,8 @@ class App extends StatelessWidget {
       ),
       textTheme: TextTheme(
         titleLarge: TitleTextStyle,
-        subtitle: SubTitleTextStyle,
-        caption: CaptionTextStyle,
+        titleMedium: SubTitleTextStyle,
+        bodySmall: CaptionTextStyle,
         bodyMedium: Body1TextStyle,
       ),
     );
